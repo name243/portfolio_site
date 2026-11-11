@@ -1,0 +1,16 @@
+:root {
+  --background: hsl(228 8% 7.5%);
+  --foreground: hsl(0 0% 94%);
+  --card: hsl(220 10% 11.4%);
+  --muted-foreground: hsl(0 0% 56%);
+  --border: hsl(220 7% 18%);
+  --destructive: hsl(0 72% 60%);
+  --peri: hsl(236 100% 80%);
+  --pink: hsl(344 100% 85%);
+  --str: hsl(90 58% 71%);
+  --grey: hsl(0 0% 54%);
+  --olive: hsl(0 0% 43.5%);
+  --radius: 10px;
+  --sans: "Onest", sans-serif;
+  --mono: "JetBrains Mono", monospace;
+}

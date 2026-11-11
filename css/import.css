@@ -1,0 +1,10 @@
+/* css base */
+@import url(../css/base/fonts.css);
+@import url(../css/base/vars.css);
+@import url(../css/base/normalize.css);
+@import url(../css/base/global.css);
+
+
+/* css block */
+@import url(../css//blocks/footer.css);
+@import url(../css/blocks/header.css);
