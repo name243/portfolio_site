@@ -1,0 +1,32 @@
+.toast {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 100;
+  display: grid;
+  gap: 4px;
+  min-width: 260px;
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--background);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 0.4);
+  opacity: 0;
+  transform: translateY(16px);
+  pointer-events: none;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+}
+.toast.is-shown {
+  opacity: 1;
+  transform: none;
+}
+.toast b {
+  font-size: 14px;
+  font-weight: 600;
+}
+.toast span {
+  font-size: 14px;
+  color: var(--muted-foreground);
+}

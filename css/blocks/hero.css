@@ -1,0 +1,108 @@
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 50px;
+}
+.hero__title {
+  margin-top: 28px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-size: clamp(52px, 12vw, 153px);
+}
+.hero__title > span {
+  display: block;
+}
+.dot {
+  display: inline-block;
+  width: 0.16em;
+  height: 0.16em;
+  margin: 0 0.22em;
+  border-radius: 50%;
+  background: var(--grey);
+  vertical-align: middle;
+}
+.hero__grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 22px 20px 32px;
+}
+.code-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 16px 20px;
+  font-family: var(--mono);
+  font-size: 12.8px;
+  line-height: 1.7;
+  color: var(--muted-foreground);
+}
+.code-card pre {
+  font: inherit;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.code-card b {
+  font-weight: 400;
+}
+.code-card__dots {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.code-card__dots i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--border);
+}
+.cursor {
+  display: inline-block;
+  width: 7px;
+  height: 1.1em;
+  margin-left: 4px;
+  transform: translateY(3px);
+  background: hsl(236 100% 80% / 0.8);
+  animation: blink 1s infinite;
+}
+.hero__lead {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--border);
+}
+.hero__lead p {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px;
+  font-size: 14.4px;
+  color: var(--muted-foreground);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    min-height: 0;
+    height: clamp(700px, 100vh, 900px);
+  }
+  .hero__grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 22px 44px 0;
+  }
+  .hero__lead p {
+    font-size: 32px;
+  }
+}

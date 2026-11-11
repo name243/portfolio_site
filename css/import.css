@@ -1,10 +1,18 @@
 /* css base */
-@import url(../css/base/fonts.css);
-@import url(../css/base/vars.css);
-@import url(../css/base/normalize.css);
-@import url(../css/base/global.css);
-
+@import url('./base/fonts.css');
+@import url('./base/vars.css');
+@import url('./base/normalize.css');
+@import url('./base/global.css');
+@import url('./base/components.css');
 
 /* css block */
-@import url(../css//blocks/footer.css);
-@import url(../css/blocks/header.css);
+@import url('./blocks/header.css');
+@import url('./blocks/hero.css');
+@import url('./blocks/sections.css');
+@import url('./blocks/about.css');
+@import url('./blocks/services.css');
+@import url('./blocks/portfolio.css');
+@import url('./blocks/skills.css');
+@import url('./blocks/contacts.css');
+@import url('./blocks/footer.css');
+@import url('./blocks/toast.css');

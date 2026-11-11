@@ -1,4 +1,13 @@
+
+
+
 :root {
+
+   --font-family: var(--sans); 
+
+
+
+
   --background: hsl(228 8% 7.5%);
   --foreground: hsl(0 0% 94%);
   --card: hsl(220 10% 11.4%);
@@ -13,4 +22,27 @@
   --radius: 10px;
   --sans: "Onest", sans-serif;
   --mono: "JetBrains Mono", monospace;
+
+
+
+
+  /* ... ваши цвета ... */
+  --container-width: 1840px; /* Максимальная ширина контента */
+  --container-padding: 0px; /* Отступы по бокам для мобильных */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+svg.lucide {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
 }
