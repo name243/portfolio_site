@@ -46,7 +46,7 @@
           <svg
             viewBox="0 0 24 24"
             fill="none"
-            stroke="currentColor"
+            stroke="#fff"
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -60,7 +60,7 @@
           <svg
             viewBox="0 0 24 24"
             fill="none"
-            stroke="currentColor"
+            stroke="#fff"
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -203,7 +203,7 @@
               <pre><b class="c-peri">const</b> dev = {
   name: <span class="c-str">'DP'</span>,
   role: <span class="c-str">'веб-разработчик'</span>,
-  stack: [<span class="c-str">'React'</span>, <span class="c-str">'TypeScript'</span>, <span class="c-str">'Python'</span>],
+  stack: [<span class="c-str">'HTML'</span>, <span class="c-str">'TypeScript'</span>, <span class="c-str">'Wordpress'</span>],
   делаю: <span class="c-str">'лендинги, визитки, магазины'</span>,
 };
 <b class="c-peri">export default</b> <em class="c-pink">launch</em>(dev);<span class="cursor"></span></pre>
@@ -438,9 +438,9 @@
               <div class="service__bottom">
                 <div class="service__price">от 5 000 ₽</div>
                 <button
-                  class="round-btn"
-                  data-service="Сайт-визитка"
-                  aria-label="Заказать: Сайт-визитка"
+                  class="round-btn round-btn--filled"
+                  data-service="Лендинг"
+                  aria-label="Заказать: Лендинг"
                 >
                   <svg
                     viewBox="0 0 24 24"
@@ -454,7 +454,6 @@
                     <path d="M7 7h10v10"></path>
                     <path d="M7 17 17 7"></path>
                   </svg>
-                </button>
               </div>
             </article>
             <!-- Карточка 2 -->
@@ -579,7 +578,7 @@
                     <circle cx="12" cy="12" r="10"></circle>
                     <polyline points="12 6 12 12 16 14"></polyline>
                   </svg>
-                  от 4 недель
+                  от 2 недель
                 </span>
               </div>
               <h3>Интернет-магазин</h3>
@@ -648,9 +647,9 @@
               <div class="service__bottom">
                 <div class="service__price">от 25 000 ₽</div>
                 <button
-                  class="round-btn"
-                  data-service="Интернет-магазин"
-                  aria-label="Заказать: Интернет-магазин"
+                  class="round-btn round-btn--filled"
+                  data-service="Лендинг"
+                  aria-label="Заказать: Лендинг"
                 >
                   <svg
                     viewBox="0 0 24 24"
@@ -939,6 +938,11 @@
                 <li>
                   <span>
                     <svg
+                      style="
+                        width: 22px !important;
+                        height: 22px !important;
+                        min-width: 22px;
+                      "
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
@@ -948,12 +952,19 @@
                       class="lucide c-peri"
                     >
                       <path
-                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.790 19.790 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.790 19.790 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.840 12.840 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.840 12.840 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                      ></path>
+                        d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.576-1.496c.586-.189 1.337 1.261 2.133 1.819.603.421 1.06.329 1.06.329l2.13-.03s1.115-.07.586-.96c-.043-.072-.308-.661-1.588-1.87-1.34-1.264-1.16-1.06.453-3.246.982-1.327 1.375-2.137 1.252-2.484-.117-.33-.84-.243-.84-.243l-2.4.015s-.178-.025-.31.056c-.128.078-.21.263-.21.263s-.382 1.037-.892 1.92c-1.075 1.86-1.506 1.958-1.682 1.843-.408-.269-.306-1.08-.306-1.656 0-1.802.268-2.553-.522-2.748-.262-.064-.455-.106-1.125-.113-.86-.009-1.587.003-2 .209-.275.137-.487.443-.358.46.16.022.522.099.714.363.248.34.239 1.104.239 1.104s.142 2.121-.332 2.384c-.325.181-.772-.188-1.728-1.874-.49-.858-.86-1.807-.86-1.807s-.071-.177-.198-.272c-.154-.115-.37-.151-.37-.151l-2.282.015s-.342.01-.468.161c-.112.134-.009.411-.009.411s1.787 4.263 3.81 6.409c1.855 1.967 3.96 1.838 3.96 1.838h.953z"
+                      />
                     </svg>
-                    Телефон
+                    VK
                   </span>
-                  <b>+7 (910) 690-14-66</b>
+                  <a
+                    href="https://vk.ru/id782142056"
+                    class="contact-value"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    vk.ru/id782142056
+                  </a>
                 </li>
               </ul>
               <div class="status">
@@ -1065,7 +1076,7 @@
       <div class="container">
         <div class="footer__top">
           <div class="footer__brand">
-            <img src="" alt="DP" />
+            <img src="./css/assets/images/logo.jpg" alt="DP" />
             <div>
               <div>DP</div>
               <small>Веб-разработчик</small>
